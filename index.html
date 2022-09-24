@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My home</title>
+  <style>
+    body {
+      margin: 0;
+      background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/118/original/5bd6a140ae47533e6f563ebff362f9cc.jpg?1654206624");
+      background-size: cover;
+      background-position: bottom;
+    }
+    .container {
+      background-color: #F3EFEE;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 15px 60px;
+      box-shadow: 10px 10px 30px rgb(130, 130, 208);
+
+    }
+    h1 {
+      text-align: center;
+      color: #4f81c7;
+      margin: 0;
+      font-size: 60px;
+      line-height: 1;
+      font-family: Brush Script MT;
+      
+
+    }
+    h2 {
+      text-align: center;
+      margin: 0;
+      color: #110f2c;
+      font-size: 30px;
+      line-height: 1;
+      font-family: 	Brush Script MT;
+    
+    }
+    .map {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+      border-radius: 70%;
+    }
+    p {
+      line-height: 1.3;
+      text-align: center;
+      font-family: Brush Script MT;
+      font-size: 25px;
+      margin-bottom: 0;
+    }
+    h3 {
+      font-family:  Brush Script MT;
+      font-size: 25px;
+      text-align: center;
+     
+    }
+    .attribute {
+      display: flex;
+      flex-wrap: wrap;
+      width: 300px;
+      margin: 0 auto;
+    }
+    img {
+     width: 33.3%;
+     padding: 10px;
+     box-sizing: border-box;
+     border-radius: 20px;
+
+    }
+   .readMore{
+    text-align: center;
+   }
+    .infoUkraine {
+
+      font-family: Brush Script MT;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    .infoUkraine:hover {
+      text-decoration: underline;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      background: #97b4dd;
+      color: black;
+      font-family:  Brush Script MT;
+      font-size: 25px;
+      padding: 15px 15px;
+      border-radius: 80px;
+      border: none;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+
+    <h1>Ukraine
+      </h1>
+    </h1>
+    <h2>
+      made me inspire
+    </h2>
+    <img class="map"
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/030/original/56210cc258a401c2d3fcb0f758e99c61.jpg?1654120784"
+      alt="Ukraine"
+    />
+    <p>
+      Ukraine, a democracy of 44 million people, continues to experience a
+      devastating attack. As the world uneasily watches the 98th day of the
+      Russian invasion, people and nations are uniting like never before,
+      sending support and condemning this unjustified war.
+    </p>
+    <div class="readMore"> <a 
+      href="https://www.boredpanda.com/beautiful-ukraine-pics/?utm_source=google&utm_medium=organic&utm_campaign=organic"
+      target="_blank"
+      class="infoUkraine">
+      Read more
+    </a></div>
+   
+    <h3>
+        Our attributes:
+    </h3>
+    <div class="attribute">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/123/original/1ba3fe005a9e5af1a0f8e338454ae1d6.jpg?1654210240"
+      alt="flag" class="img">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/126/original/1635897560_1-flomaster-club-p-kalina-narisovannaya-krasivii-risunok-1.jpg?1654210263"
+      alt="guelderRose" class="img">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/125/original/2203493.jpg?1654210256"
+      alt="shirt" class="img">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/203/original/derzhavnyj-gerb-ukrayiny.jpg?1654286233"
+      alt="emblem" class="img">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/202/original/3212208499_ukrayinskij-vinok-z.jpg?1654286093"
+      alt="wreath" class="img">
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/036/201/original/960m.jpg?1654286087"
+      alt="borsch" class="img">
+
+    </div>
+    <p class="foundation">
+      You can help Ukraine by donate. There is
+      <a href="https://savelife.in.ua/en/" target="_blank">Foundation </a> that
+      providing competent assistance to the military.
+    </p>
+    <button>💙💛Save Ukraine💙💛</button>
+    <p class="authur">
+      By
+      <a href="https://www.facebook.com/nastya.yavorska" target="_blank">
+        Anastasiia Honcharenko
+      </a>
+      with love
+    </p>
+  </div>
+  <script>
+    function saveUkraine () {
+      let name = prompt("What is your name?");
+      let country = prompt("Where are you from?");
+      alert(
+        "Tnank you," + name + "! " + country + " with Ukraine!"
+      );
+    }
+    let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", saveUkraine);
+  </script>
+  </body>
+</html>
